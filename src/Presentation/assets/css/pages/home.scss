@@ -224,6 +224,9 @@ main {
 					padding: 36px 20px;
 					font-family: 'Public Sans';
 					height: 250px;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
 
 					&::before {
 						content: '';

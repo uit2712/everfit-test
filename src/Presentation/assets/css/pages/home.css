@@ -177,6 +177,9 @@ main .sec-coaches-feedbacks .slider-coaches-feedbacks .slider-item .description 
   padding: 36px 20px;
   font-family: "Public Sans";
   height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 main .sec-coaches-feedbacks .slider-coaches-feedbacks .slider-item .description::before {
   content: "";

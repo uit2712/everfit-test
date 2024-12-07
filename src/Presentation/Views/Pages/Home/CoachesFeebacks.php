@@ -19,8 +19,10 @@ $listItems = LinkLibraryApi::getLinksBySlug(
 				</div>
 				<div class="description">
 					<div class="detail"><?php echo $item->largeDescription; ?></div>
-					<p class="name"><?php echo $item->title; ?></p>
-					<p class="extra"><?php echo $item->description; ?> @ <span class="role"><?php echo $item->notes; ?></span></p>
+					<div>
+						<p class="name"><?php echo $item->title; ?></p>
+						<p class="extra"><?php echo $item->description; ?> @ <span class="role"><?php echo $item->notes; ?></span></p>
+					</div>
 				</div>
 			</div>
 		<?php endforeach; ?>
