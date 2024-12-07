@@ -1,7 +1,7 @@
 <?php
 if ( defined( 'DB_NAME' ) === false ) {
 	/** The name of the database for WordPress */
-	define( 'DB_NAME', 'wp' );
+	define( 'DB_NAME', 'everfit_test' );
 }
 
 if ( defined( 'DB_USER' ) === false ) {

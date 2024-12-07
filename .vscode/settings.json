@@ -1,0 +1,27 @@
+{
+	"[php]": {
+		"editor.insertSpaces": false,
+		"editor.formatOnSave": true
+	},
+	"[css]": {
+		"editor.formatOnSave": false
+	},
+	"editor.linkedEditing": true,
+	"editor.tabSize": 4,
+	"editor.detectIndentation": false,
+	"window.title": "${activeEditorLong}${separator}${rootName}",
+	"phpsab.standard": "WordPress",
+	"phpsab.snifferEnable": true,
+	"phpsab.executablePathCBF": "/root/wpcs/vendor/squizlabs/php_codesniffer/bin/phpcbf",
+	"phpsab.executablePathCS": "/root/wpcs/vendor/squizlabs/php_codesniffer/bin/phpcs",
+	"phpsab.snifferShowSources": true,
+	"phpsab.fixerEnable": true,
+    "editor.suggest.showFunctions": true,
+    "editor.suggest.showSnippets": true, 
+    "editor.suggest.showMethods": true,
+    "javascript.suggest.completeFunctionCalls": true,
+    "liveSassCompile.settings.includeItems": [
+        "**/post-publication/**"
+    ],
+    "liveSassCompile.settings.generateMap": false
+}
