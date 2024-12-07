@@ -5,19 +5,24 @@ footer {
 	.inner {
 		height: 100%;
 		align-items: center;
-	}
 
-	.social-networks {
-		a {
-			text-decoration: none;
+		.copyright {
+			font-family: 'Public Sans';
+			font-size: 16px;
+		}
 
-			&:not(:last-child) {
-				margin-right: 24px;
-			}
+		.social-networks {
+			a {
+				text-decoration: none;
 
-			i {
-				color: black;
-				font-size: 16px;
+				&:not(:last-child) {
+					margin-right: 24px;
+				}
+
+				i {
+					color: black;
+					font-size: 16px;
+				}
 			}
 		}
 	}

@@ -6,13 +6,17 @@ footer .inner {
   height: 100%;
   align-items: center;
 }
-footer .social-networks a {
+footer .inner .copyright {
+  font-family: "Public Sans";
+  font-size: 16px;
+}
+footer .inner .social-networks a {
   text-decoration: none;
 }
-footer .social-networks a:not(:last-child) {
+footer .inner .social-networks a:not(:last-child) {
   margin-right: 24px;
 }
-footer .social-networks a i {
+footer .inner .social-networks a i {
   color: black;
   font-size: 16px;
 }
