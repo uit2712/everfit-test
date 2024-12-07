@@ -6,6 +6,7 @@
 	<title>Everfit test</title>
 	<?php wp_head(); ?>
 	<link rel="stylesheet" href="/src/Presentation/assets/css/pages/home.css" />
+	<link rel="stylesheet" href="/src/Presentation/assets/css/common/slick.min.css" />
 </head>
 <body>
 	<header>
@@ -23,8 +24,3 @@
 			</section>
 		</div>
 	</header>
-	<main>
-		<section class="sec-background"></section>
-		<?php \Presentation\Helpers\ViewHelper::render( 'Views/Pages/Home/Introduction.php' ); ?>
-		<?php \Presentation\Helpers\ViewHelper::render( 'Views/Pages/Home/TrustedCompanies.php' ); ?>
-	</main>

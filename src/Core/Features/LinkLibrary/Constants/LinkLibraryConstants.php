@@ -6,7 +6,7 @@ class LinkLibraryConstants {
 	public const IMAGE_META_KEY = 'link_image';
 	public const PRICE_META_KEY = 'link_price';
 	public const DESCRIPTION_META_KEY = 'link_description';
-	public const LARGE_DESCRIPTION_META_KEY = 'link_large_description';
+	public const LARGE_DESCRIPTION_META_KEY = 'link_textfield';
 	public const EMAIL_META_KEY = 'link_email';
 	public const TELEPHONE_META_KEY = 'link_telephone';
 	public const NOTES_META_KEY = 'link_notes';

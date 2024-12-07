@@ -75,7 +75,7 @@ main {
 		justify-content: center;
 
 		h1 {
-			font-family: Bold;
+			font-family: 'Sequel Sans Bold';
 			font-size: 54px;
 		}
 
@@ -108,7 +108,7 @@ main {
 				align-items: center;
 				display: inline-flex;
 				color: white;
-				font-family: Bold;
+				font-family: 'Sequel Sans Bold';
 				background-color: $freeTrialColor;
 				border-radius: $btnRadius;
 				padding: 18px 30px;
@@ -159,6 +159,100 @@ main {
 
 			&:not(:last-child) {
 				margin-right: 60px;
+			}
+		}
+	}
+
+	.sec-coaches-feedbacks {
+		.title {
+			font-family: 'Sequel Sans Bold';
+			text-align: center;
+			font-size: 36px;
+			margin-bottom: 48px;
+		}
+
+		.slider-coaches-feedbacks {
+			max-width: 100%;
+			padding: 0 12px;
+
+			.slider-item {
+				display: flex;
+				align-items: center;
+				background-color: #f5f1ed;
+
+				&:not(:last-child) {
+					padding-right: 30px;
+					margin-left: 15px;
+				}
+
+				&:nth-child(3n - 2) {
+					.description {
+						&::before {
+							background-image: url('/src/Presentation/assets/images/homepage/green-quote.png');
+						}
+					}
+				}
+
+				&:nth-child(3n - 1) {
+					.description {
+						&::before {
+							background-image: url('/src/Presentation/assets/images/homepage/blue-quote.png');
+						}
+					}
+				}
+
+				&:nth-child(3n - 3) {
+					.description {
+						&::before {
+							background-image: url('/src/Presentation/assets/images/homepage/black-quote.png');
+						}
+					}
+				}
+
+				.image-container {
+					width: 50%;
+
+					img {
+						flex: 1;
+					}
+				}
+
+				.description {
+					flex: 1;
+					background-color: white;
+					border-radius: 4px;
+					padding: 36px 20px;
+					font-family: 'Public Sans';
+					height: 250px;
+
+					&::before {
+						content: '';
+						display: inline-block;
+						background-size: 38px 38px;
+						width: 38px;
+						height: 38px;
+						margin-top: -55px;
+						position: absolute;
+					}
+
+					.detail {
+						margin-bottom: 20px;
+						font-size: 22px;
+					}
+
+					.name {
+						font-weight: bold;
+						font-size: 16px;
+					}
+
+					.extra {
+						font-size: 14px;
+
+						.role {
+							font-weight: bold;
+						}
+					}
+				}
 			}
 		}
 	}

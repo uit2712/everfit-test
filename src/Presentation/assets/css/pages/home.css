@@ -60,7 +60,7 @@ main .sec-introduction {
   justify-content: center;
 }
 main .sec-introduction h1 {
-  font-family: Bold;
+  font-family: "Sequel Sans Bold";
   font-size: 54px;
 }
 main .sec-introduction p {
@@ -91,7 +91,7 @@ main .sec-introduction .newsletter .btn-free-trial {
   align-items: center;
   display: inline-flex;
   color: white;
-  font-family: Bold;
+  font-family: "Sequel Sans Bold";
   background-color: #5e59ff;
   border-radius: 5px;
   padding: 18px 30px;
@@ -135,4 +135,69 @@ main .sec-trusted-companies img {
 }
 main .sec-trusted-companies img:not(:last-child) {
   margin-right: 60px;
+}
+main .sec-coaches-feedbacks .title {
+  font-family: "Sequel Sans Bold";
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 48px;
+}
+main .sec-coaches-feedbacks .slider-coaches-feedbacks {
+  max-width: 100%;
+  padding: 0 12px;
+}
+main .sec-coaches-feedbacks .slider-coaches-feedbacks .slider-item {
+  display: flex;
+  align-items: center;
+  background-color: #f5f1ed;
+}
+main .sec-coaches-feedbacks .slider-coaches-feedbacks .slider-item:not(:last-child) {
+  padding-right: 30px;
+  margin-left: 15px;
+}
+main .sec-coaches-feedbacks .slider-coaches-feedbacks .slider-item:nth-child(3n-2) .description::before {
+  background-image: url("/src/Presentation/assets/images/homepage/green-quote.png");
+}
+main .sec-coaches-feedbacks .slider-coaches-feedbacks .slider-item:nth-child(3n-1) .description::before {
+  background-image: url("/src/Presentation/assets/images/homepage/blue-quote.png");
+}
+main .sec-coaches-feedbacks .slider-coaches-feedbacks .slider-item:nth-child(3n-3) .description::before {
+  background-image: url("/src/Presentation/assets/images/homepage/black-quote.png");
+}
+main .sec-coaches-feedbacks .slider-coaches-feedbacks .slider-item .image-container {
+  width: 50%;
+}
+main .sec-coaches-feedbacks .slider-coaches-feedbacks .slider-item .image-container img {
+  flex: 1;
+}
+main .sec-coaches-feedbacks .slider-coaches-feedbacks .slider-item .description {
+  flex: 1;
+  background-color: white;
+  border-radius: 4px;
+  padding: 36px 20px;
+  font-family: "Public Sans";
+  height: 250px;
+}
+main .sec-coaches-feedbacks .slider-coaches-feedbacks .slider-item .description::before {
+  content: "";
+  display: inline-block;
+  background-size: 38px 38px;
+  width: 38px;
+  height: 38px;
+  margin-top: -55px;
+  position: absolute;
+}
+main .sec-coaches-feedbacks .slider-coaches-feedbacks .slider-item .description .detail {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+main .sec-coaches-feedbacks .slider-coaches-feedbacks .slider-item .description .name {
+  font-weight: bold;
+  font-size: 16px;
+}
+main .sec-coaches-feedbacks .slider-coaches-feedbacks .slider-item .description .extra {
+  font-size: 14px;
+}
+main .sec-coaches-feedbacks .slider-coaches-feedbacks .slider-item .description .extra .role {
+  font-weight: bold;
 }
