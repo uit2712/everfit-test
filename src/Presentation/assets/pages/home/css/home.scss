@@ -5,6 +5,7 @@
 @import url(/src/Presentation/assets/css/common/footer.css);
 
 $headerImageHeight: 874px;
+$headerImageHeightWhenLoggedIn: 906px;
 $btnRadius: 6px;
 $freeTrialColor: #5e59ff;
 
@@ -33,6 +34,16 @@ a {
 	max-width: 1920px;
 	margin: 0 auto;
 	padding: 0 68px;
+}
+
+body {
+	&.logged-in {
+		.sec-background {
+			&::after {
+				height: $headerImageHeightWhenLoggedIn;
+			}
+		}
+	}
 }
 
 main {

@@ -31,6 +31,10 @@ a {
   padding: 0 68px;
 }
 
+body.logged-in .sec-background::after {
+  height: 906px;
+}
+
 main .sec-background {
   background-image: url(/src/Presentation/assets/pages/home/images/desktop_thumb.png);
   background-repeat: no-repeat;
