@@ -6,6 +6,7 @@
 		"psr-4": {
 			"Core\\": "src/Core",
 			"Framework\\": "src/Framework",
+			"Presentation\\": "src/Presentation",
 			"Tests\\": "src/Tests"
 		},
         "files": [

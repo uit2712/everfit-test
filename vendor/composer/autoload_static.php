@@ -20,6 +20,7 @@ class ComposerStaticInitd8213a2cf01c4eb2de9ebc952d34cacf
         'P' => 
         array (
             'Psr\\SimpleCache\\' => 16,
+            'Presentation\\' => 13,
             'PhpParser\\' => 10,
         ),
         'F' => 
@@ -44,6 +45,10 @@ class ComposerStaticInitd8213a2cf01c4eb2de9ebc952d34cacf
         'Psr\\SimpleCache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/simple-cache/src',
+        ),
+        'Presentation\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Presentation',
         ),
         'PhpParser\\' => 
         array (

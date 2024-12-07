@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'Tests\\' => array($baseDir . '/src/Tests'),
     'Psr\\SimpleCache\\' => array($vendorDir . '/psr/simple-cache/src'),
+    'Presentation\\' => array($baseDir . '/src/Presentation'),
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
     'Framework\\' => array($baseDir . '/src/Framework'),
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),

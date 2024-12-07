@@ -4,12 +4,12 @@ namespace Core\Features\Menu\UseCases;
 use Core\Constants\ApiResponseCode;
 use Core\Constants\ErrorMessage;
 use Core\Features\Menu\Facades\Menu;
-use Core\Features\Menu\Models\GetMenuResult;
+use Core\Features\Menu\Models\GetListMenuItemsResult;
 use Core\Features\Menu\ViewModels\GetListMenuItemsOfMenuByLocationViewModel;
 
 class GetListMenuItemsOfMenuByLocationUseCase {
 	public function invoke( $model ) {
-		$result = new GetMenuResult();
+		$result = new GetListMenuItemsResult();
 
 		if ( null === $model || false === ( $model instanceof GetListMenuItemsOfMenuByLocationViewModel ) ) {
 			$result->message = sprintf( ErrorMessage::INVALID_DATE_PARAMETER, 'model' );
