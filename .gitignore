@@ -1,3 +1,5 @@
 wp-config-db.php
 wp-config.php
 *.log
+wp-config-for-swagger.php
+api/test/test.php
