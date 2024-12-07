@@ -1,10 +1,10 @@
-@import url(../common/font.css);
-@import url(../common/menu.css);
-@import url(../../fontawesome-free-6.7.1/css/all.min.css);
+@import url(/src/Presentation/assets/css/common/font.css);
+@import url(/src/Presentation/assets/css/common/menu.css);
+@import url(/src/Presentation/assets/fontawesome-free-6.7.1/css/all.min.css);
 
 $headerImageHeight: 874px;
 $freeTrialColor: #5e59ff;
-$btnRadius: 5px;
+$btnRadius: 6px;
 
 * {
 	padding: 0;
@@ -46,7 +46,7 @@ header {
 
 main {
 	.sec-background {
-		background-image: url(/src/Presentation/assets/images/desktop_thumb.png);
+		background-image: url(/src/Presentation/assets/pages/home/images/desktop_thumb.png);
 		background-repeat: no-repeat;
 		height: $headerImageHeight;
 		background-position: center;
@@ -164,6 +164,8 @@ main {
 	}
 
 	.sec-coaches-feedbacks {
+		margin-bottom: 140px;
+
 		.title {
 			font-family: 'Sequel Sans Bold';
 			text-align: center;
@@ -188,7 +190,7 @@ main {
 				&:nth-child(3n - 2) {
 					.description {
 						&::before {
-							background-image: url('/src/Presentation/assets/images/homepage/green-quote.png');
+							background-image: url('/src/Presentation/assets/pages/home/images/green-quote.png');
 						}
 					}
 				}
@@ -196,7 +198,7 @@ main {
 				&:nth-child(3n - 1) {
 					.description {
 						&::before {
-							background-image: url('/src/Presentation/assets/images/homepage/blue-quote.png');
+							background-image: url('/src/Presentation/assets/pages/home/images/blue-quote.png');
 						}
 					}
 				}
@@ -204,7 +206,7 @@ main {
 				&:nth-child(3n - 3) {
 					.description {
 						&::before {
-							background-image: url('/src/Presentation/assets/images/homepage/black-quote.png');
+							background-image: url('/src/Presentation/assets/pages/home/images/black-quote.png');
 						}
 					}
 				}
@@ -256,6 +258,31 @@ main {
 						}
 					}
 				}
+			}
+		}
+	}
+}
+
+footer {
+	height: 140px;
+	background-color: #f6f6f6;
+
+	.inner {
+		height: 100%;
+		align-items: center;
+	}
+
+	.social-networks {
+		a {
+			text-decoration: none;
+
+			&:not(:last-child) {
+				margin-right: 24px;
+			}
+
+			i {
+				color: black;
+				font-size: 16px;
 			}
 		}
 	}

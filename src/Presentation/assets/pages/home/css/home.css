@@ -1,6 +1,6 @@
-@import url(../common/font.css);
-@import url(../common/menu.css);
-@import url(../../fontawesome-free-6.7.1/css/all.min.css);
+@import url(/src/Presentation/assets/css/common/font.css);
+@import url(/src/Presentation/assets/css/common/menu.css);
+@import url(/src/Presentation/assets/fontawesome-free-6.7.1/css/all.min.css);
 * {
   padding: 0;
   margin: 0;
@@ -22,7 +22,7 @@ header .sec-auth .btn-try-for-free {
   display: flex;
   align-items: center;
   background-color: #5e59ff;
-  border-radius: 5px;
+  border-radius: 6px;
   padding: 16px 20px;
 }
 header .sec-auth .btn-try-for-free span {
@@ -33,7 +33,7 @@ header .sec-auth .btn-try-for-free:hover {
 }
 
 main .sec-background {
-  background-image: url(/src/Presentation/assets/images/desktop_thumb.png);
+  background-image: url(/src/Presentation/assets/pages/home/images/desktop_thumb.png);
   background-repeat: no-repeat;
   height: 874px;
   background-position: center;
@@ -93,7 +93,7 @@ main .sec-introduction .newsletter .btn-free-trial {
   color: white;
   font-family: "Sequel Sans Bold";
   background-color: #5e59ff;
-  border-radius: 5px;
+  border-radius: 6px;
   padding: 18px 30px;
   border: none;
   outline: none;
@@ -136,6 +136,9 @@ main .sec-trusted-companies img {
 main .sec-trusted-companies img:not(:last-child) {
   margin-right: 60px;
 }
+main .sec-coaches-feedbacks {
+  margin-bottom: 140px;
+}
 main .sec-coaches-feedbacks .title {
   font-family: "Sequel Sans Bold";
   text-align: center;
@@ -156,13 +159,13 @@ main .sec-coaches-feedbacks .slider-coaches-feedbacks .slider-item:not(:last-chi
   margin-left: 15px;
 }
 main .sec-coaches-feedbacks .slider-coaches-feedbacks .slider-item:nth-child(3n-2) .description::before {
-  background-image: url("/src/Presentation/assets/images/homepage/green-quote.png");
+  background-image: url("/src/Presentation/assets/pages/home/images/green-quote.png");
 }
 main .sec-coaches-feedbacks .slider-coaches-feedbacks .slider-item:nth-child(3n-1) .description::before {
-  background-image: url("/src/Presentation/assets/images/homepage/blue-quote.png");
+  background-image: url("/src/Presentation/assets/pages/home/images/blue-quote.png");
 }
 main .sec-coaches-feedbacks .slider-coaches-feedbacks .slider-item:nth-child(3n-3) .description::before {
-  background-image: url("/src/Presentation/assets/images/homepage/black-quote.png");
+  background-image: url("/src/Presentation/assets/pages/home/images/black-quote.png");
 }
 main .sec-coaches-feedbacks .slider-coaches-feedbacks .slider-item .image-container {
   width: 50%;
@@ -203,4 +206,23 @@ main .sec-coaches-feedbacks .slider-coaches-feedbacks .slider-item .description 
 }
 main .sec-coaches-feedbacks .slider-coaches-feedbacks .slider-item .description .extra .role {
   font-weight: bold;
+}
+
+footer {
+  height: 140px;
+  background-color: #f6f6f6;
+}
+footer .inner {
+  height: 100%;
+  align-items: center;
+}
+footer .social-networks a {
+  text-decoration: none;
+}
+footer .social-networks a:not(:last-child) {
+  margin-right: 24px;
+}
+footer .social-networks a i {
+  color: black;
+  font-size: 16px;
 }

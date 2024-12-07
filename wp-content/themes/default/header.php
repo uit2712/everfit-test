@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Everfit test</title>
 	<?php wp_head(); ?>
-	<link rel="stylesheet" href="/src/Presentation/assets/css/pages/home.css" />
+	<link rel="stylesheet" href="/src/Presentation/assets/pages/home/css/home.css" />
 	<link rel="stylesheet" href="/src/Presentation/assets/css/common/slick.min.css" />
 </head>
 <body>
@@ -19,7 +19,7 @@
 				<a class="btn-sign-in" href="/sign-in">Sign In</a>
 				<a class="btn-try-for-free" href="/try-for-free" title="Try For Free">
 					<span>Try For Free</span>
-					<img src="/src/Presentation/assets/images/homepage/icon-arrow-right.svg" alt="Try For Free" width="16px" height="16px"/>
+					<img src="/src/Presentation/assets/pages/home/images/icon-arrow-right.svg" alt="Try For Free" width="16px" height="16px"/>
 				</a>
 			</section>
 		</div>

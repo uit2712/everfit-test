@@ -24,7 +24,7 @@
     "editor.suggest.showMethods": true,
     "javascript.suggest.completeFunctionCalls": true,
     "liveSassCompile.settings.includeItems": [
-        "**/src/Presentation/assets/css/**"
+        "**/src/Presentation/assets/**"
     ],
     "liveSassCompile.settings.generateMap": false
 }

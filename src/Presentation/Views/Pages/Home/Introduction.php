@@ -10,7 +10,7 @@
 		<input type="email" class="email" placeholder="Enter your email" />
 		<a href="javascript:void(0)" class="btn-free-trial">
 			<span>Start 30-day Free Trial</span>
-			<img src="/src/Presentation/assets/images/homepage/icon-arrow-right.svg" alt="Try For Free" width="16px" height="16px"/>
+			<img src="/src/Presentation/assets/pages/home/images/icon-arrow-right.svg" alt="Try For Free" width="16px" height="16px"/>
 		</a>
 	</form>
 	<ul class="extra-info">
