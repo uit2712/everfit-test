@@ -18,12 +18,6 @@ class MenuRepository implements MenuRepositoryInterface {
 			return $result;
 		}
 
-		PathHelper::loadWordPressConfig();
-		if ( function_exists( 'get_nav_menu_locations' ) === false ) {
-			$result->message = sprintf( ErrorMessage::FUNCTION_NOT_EXISTS, 'get_nav_menu_locations' );
-			return $result;
-		}
-
 		$listLocations = $this->getAllMenuLocations();
 		if ( null === $listLocations[ $location ] ) {
 			$result->message = sprintf( 'Not found menu' );
