@@ -11,7 +11,7 @@ interface MenuRepositoryInterface {
 	public function getMainMenuByLocation( $location ): GetMenuResult;
 
 	/**
-	 * @param string|null $location Menu location.
+	 * @param int|null $id Menu id.
 	 */
-	public function getListMenuItemsOfMenu( $location ): GetListMenuItemsResult;
+	public function getListMenuItemsOfMenu( $id ): GetListMenuItemsResult;
 }

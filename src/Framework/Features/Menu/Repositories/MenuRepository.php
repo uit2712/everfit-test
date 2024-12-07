@@ -1,11 +1,13 @@
 <?php
 namespace Framework\Features\Menu\Repositories;
 
+use Core\Constants\ApiResponseCode;
 use Core\Constants\ErrorMessage;
 use Core\Helpers\StringHelper;
 use Core\Features\Menu\InterfaceAdapters\MenuRepositoryInterface;
 use Core\Features\Menu\Models\GetListMenuItemsResult;
 use Core\Features\Menu\Models\GetMenuResult;
+use Core\Helpers\NumericHelper;
 use Framework\Helpers\PathHelper;
 
 class MenuRepository implements MenuRepositoryInterface {
@@ -47,22 +49,16 @@ class MenuRepository implements MenuRepositoryInterface {
 		return $listLocations;
 	}
 
-	public function getListMenuItemsOfMenu( $location ): GetListMenuItemsResult {
+	public function getListMenuItemsOfMenu( $id ): GetListMenuItemsResult {
 		$result = new GetListMenuItemsResult();
 
-		$getMenuResult = $this->getMainMenuByLocation( $location );
-		if ( $getMenuResult->isHasObjectData() === false ) {
-			$result = $result->copyExceptData( $getMenuResult );
+		if ( NumericHelper::isPositiveInteger( $id ) === false ) {
+			$result->message = sprintf( ErrorMessage::POSITIVE_PARAMETER, 'id' );
+			$result->responseCode = ApiResponseCode::HTTP_BAD_REQUEST;
 			return $result;
 		}
 
-		PathHelper::loadWordPressConfig();
-		if ( function_exists( 'wp_get_nav_menu_items' ) === false ) {
-			$result->message = sprintf( ErrorMessage::FUNCTION_NOT_EXISTS, 'wp_get_nav_menu_items' );
-			return $result;
-		}
-
-		$menuItems = wp_get_nav_menu_items( $getMenuResult->data->id );
+		$menuItems = wp_get_nav_menu_items( $id );
 		if ( false === $menuItems ) {
 			$result->message = 'Not found menu items';
 			return $result;
@@ -70,7 +66,6 @@ class MenuRepository implements MenuRepositoryInterface {
 
 		$result->success = true;
 		$result->data = json_decode( json_encode( $menuItems ) );
-		$result->data = $menuItems;
 
 		return $result;
 	}
