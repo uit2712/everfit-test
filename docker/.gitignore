@@ -1,0 +1,9 @@
+redis-db/*
+wordpress/dafoh/uploads/*
+logs/*
+.env
+sql.sql
+db/*
+export-db/*.sql
+nginx/default.conf
+.env.nginx-server
