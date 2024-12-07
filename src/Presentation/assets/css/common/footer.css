@@ -1,0 +1,18 @@
+footer {
+  height: 140px;
+  background-color: #f6f6f6;
+}
+footer .inner {
+  height: 100%;
+  align-items: center;
+}
+footer .social-networks a {
+  text-decoration: none;
+}
+footer .social-networks a:not(:last-child) {
+  margin-right: 24px;
+}
+footer .social-networks a i {
+  color: black;
+  font-size: 16px;
+}

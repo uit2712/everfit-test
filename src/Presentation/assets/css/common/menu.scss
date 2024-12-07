@@ -1,44 +1,17 @@
-.inner {
+nav {
 	display: flex;
-	justify-content: space-between;
-	max-width: 1920px;
-	margin: 0 auto;
-	padding: 0 68px;
+	justify-content: flex-start;
 
-	.logo {
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
 		display: flex;
 		align-items: center;
-	}
 
-	a {
-		color: white;
-		text-decoration: none;
-		font-family: 'Sequel Sans Bold';
-		font-size: 14px;
-		font-weight: 400;
-		line-height: 16.8px;
-		letter-spacing: 0.1em;
-		text-align: right;
-		text-underline-position: from-font;
-		text-decoration-skip-ink: none;
-		text-transform: uppercase;
-	}
-
-	nav {
-		display: flex;
-		justify-content: flex-start;
-
-		ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-
-			display: flex;
-			align-items: center;
-
-			li {
-				margin-right: 25px;
-			}
+		li {
+			margin-right: 25px;
 		}
 	}
 }

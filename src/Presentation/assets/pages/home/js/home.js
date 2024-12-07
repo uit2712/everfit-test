@@ -18,4 +18,10 @@ $(document).ready(() => {
             }
         });
     })();
+
+    (function checkIfLogin() {
+        if ($('#wpadminbar').length > 0) {
+            $('body').addClass('logged-in');
+        }
+    })()
 });

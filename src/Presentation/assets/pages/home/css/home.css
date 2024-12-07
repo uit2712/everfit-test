@@ -1,10 +1,34 @@
 @import url(/src/Presentation/assets/css/common/font.css);
 @import url(/src/Presentation/assets/css/common/menu.css);
 @import url(/src/Presentation/assets/fontawesome-free-6.7.1/css/all.min.css);
-@import url(./header.css);
+@import url(/src/Presentation/assets/css/common/header.css);
+@import url(/src/Presentation/assets/css/common/footer.css);
 * {
   padding: 0;
   margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-family: "Sequel Sans Bold";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 0.1em;
+  text-align: right;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-transform: uppercase;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 68px;
 }
 
 main .sec-background {
@@ -181,23 +205,4 @@ main .sec-coaches-feedbacks .slider-coaches-feedbacks .slider-item .description 
 }
 main .sec-coaches-feedbacks .slider-coaches-feedbacks .slider-item .description .extra .role {
   font-weight: bold;
-}
-
-footer {
-  height: 140px;
-  background-color: #f6f6f6;
-}
-footer .inner {
-  height: 100%;
-  align-items: center;
-}
-footer .social-networks a {
-  text-decoration: none;
-}
-footer .social-networks a:not(:last-child) {
-  margin-right: 24px;
-}
-footer .social-networks a i {
-  color: black;
-  font-size: 16px;
 }
