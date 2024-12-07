@@ -2,7 +2,7 @@
 @import url(../common/menu.css);
 @import url(../../fontawesome-free-6.7.1/css/all.min.css);
 
-$headerImageHeight: 906px;
+$headerImageHeight: 874px;
 $freeTrialColor: #5e59ff;
 $btnRadius: 5px;
 
@@ -49,6 +49,7 @@ main {
 		background-image: url(/src/Presentation/assets/images/desktop_thumb.png);
 		background-repeat: no-repeat;
 		height: $headerImageHeight;
+		background-position: center;
 
 		&::after {
 			content: '';
@@ -138,6 +139,26 @@ main {
 			span {
 				font-family: 'Public Sans';
 				font-size: 18px;
+			}
+		}
+	}
+
+	.sec-trusted-companies {
+		max-width: 100%;
+		width: 1370px;
+		height: 80px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-width: 100%;
+		margin: 90px auto;
+
+		img {
+			width: auto;
+			height: 80px;
+
+			&:not(:last-child) {
+				margin-right: 60px;
 			}
 		}
 	}
