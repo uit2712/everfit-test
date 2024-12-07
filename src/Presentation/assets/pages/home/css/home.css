@@ -28,7 +28,7 @@ a {
   justify-content: space-between;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 68px;
 }
 
 body.logged-in .sec-background::after {
