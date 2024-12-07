@@ -1,19 +1,120 @@
 @import url(../common/font.css);
 @import url(../common/menu.css);
-
+@import url(../../fontawesome-free-6.7.1/css/all.min.css);
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 header {
-    position: absolute;
-    width: 100%;
-    padding-top: 30px;
+  position: absolute;
+  width: 100%;
+  padding-top: 30px;
+  z-index: 1;
+}
+header .sec-auth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 260px;
+}
+header .sec-auth .btn-try-for-free {
+  display: flex;
+  align-items: center;
+  background-color: #5e59ff;
+  border-radius: 5px;
+  padding: 16px 20px;
+}
+header .sec-auth .btn-try-for-free span {
+  margin-right: 10px;
+}
+header .sec-auth .btn-try-for-free:hover {
+  opacity: 0.5;
 }
 
-.sec-background {
-    background-image: url(/src/Presentation/assets/images/desktop_thumb.png);
-    background-repeat: no-repeat;
-    height: 1000px;
+main .sec-background {
+  background-image: url(/src/Presentation/assets/images/desktop_thumb.png);
+  background-repeat: no-repeat;
+  height: 906px;
+}
+main .sec-background::after {
+  content: "";
+  height: 906px;
+  opacity: 0.5;
+  background-color: black;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+main .sec-introduction {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 906px;
+  align-items: center;
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+main .sec-introduction h1 {
+  font-family: Bold;
+  font-size: 54px;
+}
+main .sec-introduction p {
+  font-family: "Public Sans";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 39.2px;
+  letter-spacing: -0.74px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+main .sec-introduction .newsletter {
+  margin-top: 48px;
+}
+main .sec-introduction .newsletter .email {
+  outline: 0;
+  border: none;
+  border-radius: 5px;
+  padding: 0 25px;
+  width: 520px;
+  height: 60px;
+  font-family: "Public Sans";
+  font-size: 14px;
+}
+main .sec-introduction .newsletter .btn-free-trial {
+  align-items: center;
+  display: inline-flex;
+  color: white;
+  font-family: Bold;
+  background-color: #5e59ff;
+  border-radius: 5px;
+  padding: 18px 30px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+main .sec-introduction .newsletter .btn-free-trial img {
+  margin-left: 28px;
+}
+main .sec-introduction .extra-info {
+  list-style-type: none;
+  margin-top: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  width: 814px;
+  justify-content: space-between;
+  max-width: 100%;
+}
+main .sec-introduction .extra-info i {
+  margin-right: 8px;
+}
+main .sec-introduction .extra-info span {
+  font-family: "Public Sans";
+  font-size: 18px;
 }

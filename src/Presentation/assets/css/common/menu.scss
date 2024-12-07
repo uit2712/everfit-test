@@ -3,11 +3,30 @@
 	justify-content: space-between;
 	max-width: 1920px;
 	margin: 0 auto;
-	padding: 0 135px;
+	padding: 0 68px;
+
+	.logo {
+		display: flex;
+		align-items: center;
+	}
+
+	a {
+		color: white;
+		text-decoration: none;
+		font-family: Bold;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 16.8px;
+		letter-spacing: 0.1em;
+		text-align: right;
+		text-underline-position: from-font;
+		text-decoration-skip-ink: none;
+		text-transform: uppercase;
+	}
 
 	nav {
 		display: flex;
-		justify-content: flex-end;
+		justify-content: flex-start;
 
 		ul {
 			list-style-type: none;
@@ -18,15 +37,7 @@
 			align-items: center;
 
 			li {
-				text-transform: uppercase;
 				margin-right: 25px;
-
-				a {
-					color: white;
-					text-decoration: none;
-					font-weight: bold;
-					font-family: Normal;
-				}
 			}
 		}
 	}

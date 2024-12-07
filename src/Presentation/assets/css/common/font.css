@@ -1,9 +1,14 @@
 @font-face {
     font-family: 'Normal';
-    src: url("/src/Presentation/assets/fonts/sequel-sans/Sequel Sans Black Disp.ttf");
+    src: url("/src/Presentation/assets/fonts/sequel-sans/Sequel Sans Light Disp.ttf");
 }
 
 @font-face {
     font-family: 'Bold';
     src: url("/src/Presentation/assets/fonts/sequel-sans/Sequel Sans Bold Disp.ttf");
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: url("/src/Presentation/assets/fonts/public-sans/PublicSans-Light.ttf");
 }
