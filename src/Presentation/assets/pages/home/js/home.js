@@ -8,4 +8,14 @@ $(document).ready(() => {
         prevArrow: false,
         nextArrow: false
     });
+
+    (function stickMenu() {
+        $(window).bind('scroll', function () {
+            if ($(window).scrollTop() > 200) {
+                $('header').addClass('sticky');
+            } else {
+                $('header').removeClass('sticky');
+            }
+        });
+    })();
 });

@@ -13,6 +13,7 @@
 		<div class="inner">
 			<a href="/" class="logo">
 				<img class="logo-white" src="/src/Presentation/assets/images/logo-white.svg" data-src="/src/Presentation/assets/images/logo-white.svg" alt="Everfit" width="auto" height="34px"/>
+				<img class="logo-dark" src="/src/Presentation/assets/images/logo-dark.svg" data-src="/src/Presentation/assets/images/logo-dark.svg" alt="Everfit" width="auto" height="34px"/>
 			</a>
 			<?php \Presentation\Helpers\ViewHelper::render( 'Views/Common/Menu.php' ); ?>
 			<section class="sec-auth">
