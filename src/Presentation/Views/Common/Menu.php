@@ -12,7 +12,9 @@ $listMenuItems = MenuApi::getListItemsOfMenuByLocation(
 <nav role="navigation" aria-label="Main menu">
 	<ul>
 		<?php foreach ( $listMenuItems as $item ) : ?>
-			<li><?php echo $item->title; ?></li>
+			<li>
+				<a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a>
+			</li>
 		<?php endforeach; ?>
 	</ul>
 </nav>

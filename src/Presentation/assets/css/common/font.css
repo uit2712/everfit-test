@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Normal';
+    src: url("/src/Presentation/assets/fonts/sequel-sans/Sequel Sans Black Disp.ttf");
+}
+
+@font-face {
+    font-family: 'Bold';
+    src: url("/src/Presentation/assets/fonts/sequel-sans/Sequel Sans Bold Disp.ttf");
+}
